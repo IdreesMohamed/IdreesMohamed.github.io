@@ -1,26 +1,27 @@
 body {
-  background-image: url('background.jpg');
+  background-image: url('photo-1464618663641-bbdd760ae84a.avif');
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-  margin: 0;
+  background-attachment: fixed;
+  background-position: center;
   font-family: Arial, sans-serif;
   color: white;
+  text-align: center;
+  padding-top: 50px;
 }
 
-
-
-.container {
-  max-width: 800px;
-  margin: auto;
-  padding: 40px 20px;
-  animation: fadeIn 1s ease-in-out;
+.profile-container {
+  margin-top: 30px;
 }
+
 .profile-pic {
   width: 150px;
+  height: 150px;
   border-radius: 50%;
-  margin-bottom: 20px;
+  border: 3px solid white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
+
 
 header {
   text-align: center;
