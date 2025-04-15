@@ -16,6 +16,11 @@ body {
   padding: 40px 20px;
   animation: fadeIn 1s ease-in-out;
 }
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
 
 header {
   text-align: center;
