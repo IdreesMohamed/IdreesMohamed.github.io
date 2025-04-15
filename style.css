@@ -22,7 +22,37 @@ body {
   margin: 20px auto;
 }
 
+button:hover {
+    background-color: #4CAF50; /* Change button color on hover */
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1); /* Slightly increase size on hover */
+    transition: all 0.3s ease; /* Smooth transition */
+}
 
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
 
 header {
   text-align: center;
@@ -74,9 +104,16 @@ a:hover {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-@media (max-width: 768px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .about, .skills, .projects {
+        padding: 20px;
+    }
+}
