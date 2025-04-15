@@ -16,7 +16,7 @@ body {
 
 .profile-pic {
   display: block;
-  margin: 40px auto 20px auto; /* pushes it down from header */
+  margin: 40px auto 20px auto; 
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -29,7 +29,7 @@ header {
   position: relative;
   z-index: 10;
   padding: 20px;
-  background-color: #5c4033; 
+  background-color: white; 
   color: white;
   text-align: center;
 }
