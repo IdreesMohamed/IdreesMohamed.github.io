@@ -33,8 +33,26 @@ header {
 }
 
 section {
-  margin-bottom: 30px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+section h2 {
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 2px solid #aaa;
+  padding-bottom: 5px;
+}
+
+section ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
 
 h2 {
   color: #007acc;
