@@ -33,6 +33,25 @@ header {
   color: white;
   text-align: center;
 }
+.header-section {
+  background-image: url('background.jpg'); /* Replace with your actual image file name or URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px; /* Adjust height as needed */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-content {
+  background: rgba(0, 0, 0, 0.5); /* optional: darkens content area for readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
 
 .highlight {
   color: #007acc;
