@@ -59,13 +59,15 @@ nav ul li a.active {
 }
 
 .hero {
- margin-top: 80px;
-    display: flex;
-    align-items: center;
-    padding: 100px 50px;
-    background: linear-gradient(to right, #ffffff 50%, #00b894 50%);
-    color: #2d3436;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 100px;
+  background: #fff; /* Remove green gradient */
+  color: #2d3436;
 }
+
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
@@ -103,11 +105,11 @@ nav ul li a.active {
 .hero-content .btn:hover {
   background: #019875;
 }
- .hero-image {
+.hero-image {
   flex: 1;
   display: flex;
-  justify-content: center;
-  padding-left: 50px; /* Add some left padding to shift it right */
+  justify-content: flex-end; /* Push image to the right */
+  padding-right: 50px;       /* Optional: Add some right spacing */
 }
 
 .hero-image img {
