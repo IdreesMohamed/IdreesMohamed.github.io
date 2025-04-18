@@ -69,10 +69,10 @@ nav ul li a.active {
 }
 
 .hero-content {
+  flex: 1;
   max-width: 800px;
-  margin: 0 auto;
   text-align: center;
-  transform: translateX(15%); /* Adjust this to move it more */
+  transform: translateX(15%); /* Adjusted more to the right */
 }
 
 
