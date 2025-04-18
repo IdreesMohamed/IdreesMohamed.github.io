@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
+   line-height: 1.6;
   background: #fdfdfd;
   color: #333;
 }
@@ -14,7 +15,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: white;
+  background: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,14 +56,16 @@ nav ul li a.active {
 }
 
 .hero {
-  margin-top: 100px;
-  padding: 100px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(to right, #ffffff 50%, #00b894 50%);
+ margin-top: 80px;
+    display: flex;
+    align-items: center;
+    padding: 100px 50px;
+    background: linear-gradient(to right, #ffffff 50%, #00b894 50%);
+    color: #2d3436;
 }
-
+.hero-content {
+    flex: 1;
+  }
 .hero-content h4 {
   font-size: 22px;
   color: #00b894;
@@ -71,18 +74,19 @@ nav ul li a.active {
 .hero-content h1 {
   font-size: 48px;
   margin: 10px 0;
+  color: #2d3436;
 }
 
 .hero-content p {
-  font-size: 18px;
+  font-size: 10px 0;
 }
 
 .hero-content .btn {
   display: inline-block;
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 12px 25px;
   background: #00b894;
-  color: white;
+  color: #fff;
   text-decoration: none;
   border-radius: 4px;
   transition: 0.3s;
@@ -91,22 +95,34 @@ nav ul li a.active {
 .hero-content .btn:hover {
   background: #019875;
 }
-
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
 .hero-image img {
-  width: 350px;
-  border-radius: 10px;
+  width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
 }
 
 section {
   padding: 100px 50px;
-  text-align: center;
 }
 
 section h2 {
   font-size: 36px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-
+ section p, section li {
+    font-size: 18px;
+  }
+ .card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
 .box-grid {
   display: flex;
   flex-wrap: wrap;
@@ -135,6 +151,15 @@ footer {
   margin-top: 40px;
   color: #666;
 }
+  ul {
+    padding-left: 20px;
+  }
+  a {
+    color: #00b894;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 
 @media (max-width: 768px) {
   header {
@@ -146,13 +171,17 @@ footer {
     flex-direction: column;
     margin-top: 10px;
   }
+   nav ul li {
+      margin: 10px 0;
+    }
 
   .hero {
     flex-direction: column;
     text-align: center;
   }
-
-  .hero-image {
-    margin-top: 20px;
+   .hero-image {
+      margin-top: 20px;
+    }
   }
-}
+
+ 
