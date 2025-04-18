@@ -10,6 +10,9 @@ body {
   background: #fdfdfd;
   color: #333;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 header {
   position: fixed;
@@ -64,8 +67,12 @@ nav ul li a.active {
     color: #2d3436;
 }
 .hero-content {
-    flex: 1;
-  }
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  transform: translateX(5%); /* Shift slightly to the right */
+}
+
 .hero-content h4 {
   font-size: 22px;
   color: #00b894;
