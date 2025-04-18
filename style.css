@@ -103,11 +103,13 @@ nav ul li a.active {
 .hero-content .btn:hover {
   background: #019875;
 }
-  .hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
+ .hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-left: 50px; /* Add some left padding to shift it right */
+}
+
 .hero-image img {
   width: 80%;
     max-width: 400px;
