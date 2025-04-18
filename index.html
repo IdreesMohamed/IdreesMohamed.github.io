@@ -1,74 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Idrees Mohamed's portfolio showcasing his skills, education, and projects.">
-    <meta name="keywords" content="Idrees Mohamed, portfolio, web developer, skills, education, projects">
-    <meta name="author" content="Idrees Mohamed">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Idrees | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<
 <body>
+  <!-- Header -->
   <header>
-    <img src="IMG_20240306_163752.jpg" alt="Idrees Mohamed" class="profile-pic">
-    <h1>Idrees Mohamed</h1>
-    <p>B.Tech CSE @ Nandha Engineering College</p>
-    <p>📧 Email: <a href="mohamedidrees.official@gmail.com">mohamedidrees.official@gmail.com</a></p>
-    <p>📞 Phone: <a href="tel:+919488962817">+919488962817</a></p>
-    <p>🔗 LinkedIn for Android: <a href="https://www.linkedin.com/in/idrees-mohamed-513459331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com_profile</a></p>
-    <p>🔗 LinkedIn for Desktop: <a href="http://www.linkedin.com/in/mohamed-idrees-513459331" target="_blank">linkedin.com_profile</a></p>
+    <div class="logo">Idrees<span>Portfolio</span></div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I’m a Computer Science student passionate about technology, development, and building impactful projects.</p>
-    </section>
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h4>Hello I'm</h4>
+      <h1>Idrees Mohamed</h1>
+      <p>Freelance Web Designer & B.Tech CSE Student</p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+    <div class="hero-image">
+      <img src="assets/images/idrees.jpg" alt="Idrees" />
+    </div>
+  </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill"><i class="fab fa-html5"></i> HTML</div>
-        <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
-        <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
-        <div class="skill"><i class="fas fa-database"></i> SQL</div>
-        <div class="skill"><i class="fas fa-chart-bar"></i> Power BI</div>
-      </div>
-    </section>
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a Computer Science student passionate about building web apps, UI/UX design, and freelancing.</p>
+  </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <p>Nandha Engineering College, B.Tech in Computer Science (2024 - 2028)</p>
-    </section>
+  <!-- Services -->
+  <section id="services">
+    <h2>Services</h2>
+    <div class="box-grid">
+      <div class="box">Web Design</div>
+      <div class="box">Frontend Development</div>
+      <div class="box">Portfolio Building</div>
+    </div>
+  </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-card">
-        <h3>Project Title</h3>
-        <p>🚧 Working on it... will update soon!</p>
-      </div>
-    </section>
+  <!-- Projects -->
+  <section id="portfolio">
+    <h2>Projects</h2>
+    <div class="box-grid">
+      <div class="box">Project 1: Portfolio Website</div>
+      <div class="box">Project 2: College Management System</div>
+      <div class="box">Project 3: JavaScript Game</div>
+    </div>
+  </section>
 
-    <section id="certifications">
-      <h2>Certifications</h2>
-      <p>SkillCamp: <a href="https://www.linkedin.com/posts/mohamed-idrees-513459331_cybersecurity-socialmediasafety-digitalawareness-activity-7314962686931267584-Uf3t?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFOJ1J8Bpa-zCVRZUHGkNbEE8M0-h4K5dUo" target="_blank">Completed an 2 hour Skillcamp</a>.</p>
-      <p>Hackathon: <a href="https://www.linkedin.com/posts/mohamed-idrees-513459331_hackathon-blockchain-cybersecurity-activity-7312846479285465088-ClWV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFOJ1J8Bpa-zCVRZUHGkNbEE8M0-h4K5dUo" target="_blank">Participated in an Hackathon based on BLOCKCHAIN BASED SECURITY SYSTEM</a>.</p>
-    </section>
-  </main>
+  <!-- Pricing -->
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div class="box-grid">
+      <div class="box">Basic Website: $49</div>
+      <div class="box">Advanced Portfolio: $99</div>
+      <div class="box">Custom Website: Contact Me</div>
+    </div>
+  </section>
 
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li>2024 - Present: Freelance Developer</li>
+      <li>2023 - Present: B.Tech Student, Nandha Engineering College</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:idrees@example.com">idrees@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/idrees" target="_blank">linkedin.com/in/idrees</a></p>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Idrees Mohamed. All rights reserved.</p>
+    <p>&copy; 2025 Idrees Mohamed. Built with passion.</p>
   </footer>
-</body>
 
+  <script src="script.js"></script>
+</body>
 </html>
