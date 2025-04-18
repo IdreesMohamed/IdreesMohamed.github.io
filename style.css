@@ -70,8 +70,9 @@ nav ul li a.active {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  transform: translateX(5%); /* Shift slightly to the right */
+  transform: translateX(15%); /* Adjust this to move it more */
 }
+
 
 .hero-content h4 {
   font-size: 22px;
