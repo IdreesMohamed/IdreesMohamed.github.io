@@ -63,9 +63,9 @@ nav ul li a.active {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 100px 30px;
+  padding: 120px 30px;
   background: #fff;
-  gap: 40px;
+  gap: 60px;
   scroll-margin-top: 80px;
 }
 
@@ -81,22 +81,24 @@ nav ul li a.active {
 
 .hero-content h1 {
   font-size: 42px;
-  margin: 10px 0;
+  margin: 20px 0 10px;
 }
+
 
 .hero-content h4 {
   font-size: 20px;
   color: #00b894;
 }
 
-.hero-content p {
-  font-size: 18px;
-  margin: 10px 0;
+hero-content p {
+  margin: 15px 0;
+  line-height: 1.6;
 }
+
 
 .hero-content .btn {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 25px;
   padding: 12px 25px;
   background: #00b894;
   color: #fff;
@@ -186,10 +188,13 @@ footer {
   .hero {
     flex-direction: column-reverse;
     text-align: center;
+     padding: 80px 20px;
+    gap: 40px;
   }
 
   .hero-content {
     text-align: center;
+    padding: 0 10px;
   }
 
   .hero-image img {
@@ -197,13 +202,18 @@ footer {
     height: 160px;
     margin-bottom: 20px;
   }
+  section {
+    padding: 70px 20px;
+  }
 
   .hero-content h1 {
     font-size: 32px;
+    margin: 15px 0 10px;
   }
 
   .hero-content p {
     font-size: 16px;
+     margin: 12px 0;
   }
 }
 
