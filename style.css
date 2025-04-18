@@ -1,113 +1,158 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
-  background-image: url('yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  box-sizing: border-box;
 }
 
-
-.profile-container {
-  margin-top: 30px;
-}
-
-.profile-pic {
-  display: block;
-  margin: 40px auto 20px auto; 
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  z-index: 1;
-  position: relative;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdfdfd;
+  color: #333;
 }
 
 header {
-  position: relative;
-  z-index: 10;
-  padding: 20px;
-  background-color: black; 
-  color: white;
-  text-align: center;
-}
-.header-section {
-  background-image: url('background.jpg'); /* Replace with your actual image file name or URL */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 300px; /* Adjust height as needed */
-  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  padding: 20px 60px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 999;
 }
 
-.header-content {
-  background: rgba(0, 0, 0, 0.5); /* optional: darkens content area for readability */
-  padding: 20px;
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #00b894;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #00b894;
+  border-bottom: 2px solid #00b894;
+}
+
+.hero {
+  margin-top: 100px;
+  padding: 100px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #ffffff 50%, #00b894 50%);
+}
+
+.hero-content h4 {
+  font-size: 22px;
+  color: #00b894;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.hero-content p {
+  font-size: 18px;
+}
+
+.hero-content .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #00b894;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.hero-content .btn:hover {
+  background: #019875;
+}
+
+.hero-image img {
+  width: 350px;
   border-radius: 10px;
 }
 
-
-.highlight {
-  color: #007acc;
-}
-
 section {
-  margin: 30px auto;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 12px;
-  max-width: 800px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 100px 50px;
+  text-align: center;
 }
 
 section h2 {
-  margin-bottom: 10px;
-  color: #333;
-  border-bottom: 2px solid #aaa;
-  padding-bottom: 5px;
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
-section ul {
-  list-style-type: square;
-  padding-left: 20px;
+.box-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-
-h2 {
-  color: #007acc;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 5px;
+.box {
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  width: 280px;
+  transition: transform 0.3s;
 }
 
-a {
-  color: #007acc;
-  text-decoration: none;
+.box:hover {
+  transform: translateY(-10px);
+  background: #e0f7f1;
 }
 
-a:hover {
-  text-decoration: underline;
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #fafafa;
+  margin-top: 40px;
+  color: #666;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-@media screen and (max-width: 768px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-    h1 {
-        font-size: 24px;
-    }
-    .about, .skills, .projects {
-        padding: 20px;
-    }
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
 }
