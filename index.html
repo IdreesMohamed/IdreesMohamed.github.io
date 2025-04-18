@@ -106,6 +106,21 @@
   <!-- ScrollReveal CDN -->
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="script.js"></script>
+  <script>
+  const sections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
 
 </body>
 </html>
