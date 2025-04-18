@@ -200,34 +200,48 @@ section p {
 /* Responsive */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    width: 100%;
+    margin-top: 10px;
   }
 
   nav ul {
-    flex-direction: column;
-    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   nav ul li {
-    margin: 10px 0;
+    margin: 5px 10px;
   }
 
   .hero {
     flex-direction: column;
     padding: 60px 20px;
+    text-align: center;
   }
 
   .hero-content {
     transform: translateX(0);
-    text-align: center;
+  }
+
+  .hero-image {
+    justify-content: center;
+    margin-top: 20px;
   }
 
   .hero-image img {
-    width: 200px;
+    width: 220px;
   }
 }
+
 
 /* Animations */
 @keyframes fadeInUp {
