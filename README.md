@@ -14,13 +14,9 @@ This repository hosts my personal portfolio website, built using **HTML, CSS, an
 
 ## 📂 Structure
 - `index.html` – Homepage
-- `about.html` – About Me
-- `projects.html` – Projects Showcase
-- `certifications.html` – Certifications
-- `contact.html` – Contact Form
-- `assets/css/` – Stylesheets
-- `assets/js/` – Scripts
-- `assets/img/` – Images
+- `style.css` – Stylesheets
+- `main.js` – Scripts
+- `img` – Images
 
 ## 🛠️ Tech Stack
 - **Frontend:** HTML5, CSS3, JavaScript
